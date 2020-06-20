@@ -37,8 +37,9 @@ async function gsrun(cl){
     }
 
 }
-var a = gsrun(client)
+
 app.get("/", async function(req, res){
+    var a = gsrun(client)
     res.send(await a)
 })
 const PORT = process.env.PORT || 8000;
