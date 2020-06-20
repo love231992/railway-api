@@ -41,7 +41,7 @@ var a = gsrun(client)
 app.get("/", async function(req, res){
     res.send(await a)
 })
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT,function(){
     console.log("hello world")
 })
